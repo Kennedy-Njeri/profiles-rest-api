@@ -36,6 +36,7 @@ class HelloApiView(APIView):
     def post(self, request):
         """Create a hello message with our name"""
 
+
         serializer = serializers.HelloSerializer(data=request.data)
 
 
@@ -60,7 +61,7 @@ class HelloApiView(APIView):
 
 
     def patch(self, request, pk=None):
-        """Patch request, only updates fields provided in the request."""
+        """Patch request, only updates fields provided in the request right."""
 
         return Response({'method': 'patch'})
 
