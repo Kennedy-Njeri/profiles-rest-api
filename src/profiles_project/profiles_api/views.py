@@ -162,7 +162,7 @@ class LoginViewSet(viewsets.ViewSet):
     serializer_class = AuthTokenSerializer
 
     def create(self, request):
-        """Use the ObtainAuthToken APIView to validate and create token."""
+        """Use the ObtainAuthToken APIView to validate and create token. for login api"""
 
         return ObtainAuthToken().post(request)
 
